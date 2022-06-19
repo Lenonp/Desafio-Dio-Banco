@@ -1,4 +1,4 @@
-public class Conta extends Iconta {
+public class Conta implements Iconta {
 
     private int agencia;
     private int numero;
@@ -27,5 +27,19 @@ public class Conta extends Iconta {
     public double getSaldo() {
         return saldo;
     }
-    
+
+    @java.lang.Override
+    public void sacar(double valor) {
+
+    }
+
+    @java.lang.Override
+    public void depositar(double valor) {
+
+    }
+
+    @java.lang.Override
+    public void transferir(double valor, Conta contaDestino) {
+
+    }
 }
